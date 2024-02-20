@@ -1,0 +1,24 @@
+.List {
+  display: flex;
+  overflow-x: auto;
+}
+
+.Item {
+  background-color: #f9f9f9;
+  padding: 13px 30px;
+  border-radius: 30px;
+  margin-right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.4s;
+
+  &_Active {
+    background-color: #282828;
+    color: #fff;
+    pointer-events: none;
+  }
+
+  &:hover {
+    background-color: #eeeeee;
+  }
+}

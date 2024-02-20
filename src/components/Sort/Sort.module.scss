@@ -1,0 +1,50 @@
+.Sort {
+  position: relative;
+  align-items: center;
+
+  @media (max-width: 1200px) {
+    margin-top: 20px;
+    width: fit-content;
+  }
+}
+
+.Text {
+  display: inline-block;
+  font-weight: 700;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.TextValue {
+  color: #FE5F1E;
+  border-bottom: 1px dashed #FE5F1E;
+  cursor: pointer;
+  width: fit-content;
+  margin-left: auto;
+}
+
+.List {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background-color: #fff;
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px grey;
+}
+
+.Item {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.4s;
+
+  &:hover {
+    background-color: #FE5F1E0D;
+  }
+
+  &_Active {
+    background-color: #FE5F1E0D;
+    color: #FE5F1E;
+    pointer-events: none;
+  }
+}

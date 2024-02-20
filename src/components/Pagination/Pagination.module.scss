@@ -1,0 +1,23 @@
+.List {
+  display: flex;
+  padding-bottom: 40px;
+}
+
+.Item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #EB5A1E;
+  color: #EB5A1E;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: color 0.4s, background-color 0.4s;
+
+  &:hover, &_Active {
+    background-color: #EB5A1E;
+    color: #fff;
+  }
+}
